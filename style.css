@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(244, 244, 249);
+  color: rgb(65, 65, 65);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 1rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+}
+
+.aa-Item {
+  display: block;
+}
+
+.aa-ItemWrapper,
+.aa-ItemLink {
+  display: grid !important;
+  gap: calc(var(--aa-spacing-half) / 2);
+  grid-auto-flow: column;
+  justify-content: space-between;
+}
